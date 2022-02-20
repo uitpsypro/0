@@ -64,17 +64,20 @@ footer{
 
             <li class="a">Mørk Modus</li>
             <li class="a">English webpage</li>
-            <button onclick="darkMode()">Darkmode</button>
+            <button onclick="toggleLightMode()">Darkmode</button>
             <button onclick="lightMode()">LightMode</button>
             <script>
+                function toggleLightMode(){
+                    var
+                }
                 function darkMode() {
-                var element = document.body;
-                var content = document.getElementById("DarkModetext");
-                element.className = "dark-mode";
-                content.innerText = "Dark Mode is ON";
-            }
-            function lightMode() {
-                var element = document.body;
+                    var element = document.body;
+                    var content = document.getElementById("DarkModetext");
+                    element.className = "dark-mode";
+                    content.innerText = "Dark Mode is ON";
+                }
+                function lightMode() {
+                    var element = document.body;
                 var content = document.getElementById("DarkModetext");
                 element.className = "light-mode";
                 content.innerText = "Dark Mode is OFF";
