@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <a href="/css/style.css"></a>
+        <link rel="stylesheet" href="/css/style.css"/>
+        <title>Psykologi eksperimenter ved UiT</title>
+    </head>
+
+<style>
+body{
+    background-color:lightgray;
+    margin: 0em 2em;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+.light-mode {
+    background-color: lightgray;
+    color: black;
+}
+ol {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color: #333; 
+}
+li{
+    float:left;
+    text-align:center;
+    padding: 0.5em 1em;
+    color: white;
+    text-decoration: none; 
+}
+.a{
+    float:right;
+    text-align:center;
+    color: white;
+    text-decoration:none;
+}
+footer{
+    text-align:center;
+    border: 1em;
+}
+</style>
+
+<!--- main page -->
+
+    <header>
+        <h1> Psykologi eksperimenter ved UiT</h1>
+        
+    </header>
+
+    <!--- Navigation on the top or to the left? -->
+    <nav>
+        <ol>
+            <li>Hjem</li>
+            <li>Eksperimenter</li>
+            <li>Arkiv</li>
+
+
+            <li class="a">Mørk Modus</li>
+            <li class="a">English webpage</li>
+            <button onclick="darkMode()">Darkmode</button>
+            <button onclick="lightMode()">LightMode</button>
+            <script>
+                function darkMode() {
+                var element = document.body;
+                var content = document.getElementById("DarkModetext");
+                element.className = "dark-mode";
+                content.innerText = "Dark Mode is ON";
+            }
+            function lightMode() {
+                var element = document.body;
+                var content = document.getElementById("DarkModetext");
+                element.className = "light-mode";
+                content.innerText = "Dark Mode is OFF";
+            }
+            </script>
+        </ol>
+    </nav>
+
+    <body>
+        <p><a href="2page.html">Here</a> you can find the second page</p>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <hr/>
+        <p>UiT Psychology Projects (UiTPsyPro)</p>
+    </footer>
+</html>
