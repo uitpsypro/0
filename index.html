@@ -21,6 +21,9 @@ body{
     background-color: lightgray;
     color: black;
 }
+a{
+    
+}
 ol {
     list-style-type: none;
     margin:0;
@@ -57,19 +60,16 @@ footer{
     <!--- Navigation on the top or to the left? -->
     <nav>
         <ol>
-            <li>Hjem</li>
-            <li>Eksperimenter</li>
-            <li>Arkiv</li>
+            <li><a href="/index.html"> Hjem</a></li>
+            <li><a href="/no/eksperimenter.html"> Eksperimenter</a></li>
+            <li><a href="/no/arkiv.html"> Arkiv </a></li>
 
 
-            <li class="a">Mørk Modus</li>
+            <li class="a"> <button onclick="toggleLightMode()">Mørk Modus</button></li>
             <li class="a">English webpage</li>
-            <button onclick="toggleLightMode()">Darkmode</button>
+            <button onclick="darkMode()">Darkmode</button>
             <button onclick="lightMode()">LightMode</button>
             <script>
-                function toggleLightMode(){
-                    var
-                }
                 function darkMode() {
                     var element = document.body;
                     var content = document.getElementById("DarkModetext");
@@ -78,16 +78,19 @@ footer{
                 }
                 function lightMode() {
                     var element = document.body;
-                var content = document.getElementById("DarkModetext");
-                element.className = "light-mode";
-                content.innerText = "Dark Mode is OFF";
-            }
+                    var content = document.getElementById("DarkModetext");
+                    element.className = "light-mode";
+                    content.innerText = "Dark Mode is OFF";
+                }
             </script>
         </ol>
     </nav>
 
     <body>
+        <h1>Ny eksperimenter</h1>
         <p><a href="2page.html">Here</a> you can find the second page</p>
+        <body></body>
+
     </body>
 
 
@@ -102,6 +105,6 @@ footer{
 
     <footer>
         <hr/>
-        <p>UiT Psychology Projects (UiTPsyPro)</p>
+        <p>UiT Psychology Projects (UiTPsyPro) | <a href="https://github.com/uitpsypro/0">Source code</a> | Maintained by <a href="https://github.com/a-asen">a-asen</a>    </p>
     </footer>
 </html>
