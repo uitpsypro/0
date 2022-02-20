@@ -1,2 +1,3 @@
-# 0
-Psychology experiments at UiT
+# Psychology experiments at UiT
+
+
