@@ -21,9 +21,6 @@ body{
     background-color: lightgray;
     color: black;
 }
-a{
-    
-}
 ol {
     list-style-type: none;
     margin:0;
@@ -43,6 +40,9 @@ li{
     text-align:center;
     color: white;
     text-decoration:none;
+}
+a:link{
+    color: white; 
 }
 footer{
     text-align:center;
@@ -65,8 +65,9 @@ footer{
             <li><a href="/no/arkiv.html"> Arkiv </a></li>
 
 
+            <li class="a">English</li>
             <li class="a"> <button onclick="toggleLightMode()">Mørk Modus</button></li>
-            <li class="a">English webpage</li>
+            
             <button onclick="darkMode()">Darkmode</button>
             <button onclick="lightMode()">LightMode</button>
             <script>
@@ -79,8 +80,25 @@ footer{
                 function lightMode() {
                     var element = document.body;
                     var content = document.getElementById("DarkModetext");
-                    element.className = "light-mode";
-                    content.innerText = "Dark Mode is OFF";
+                    element.className = "light-mode";;
+                }
+            </script>
+            <script>
+
+                function toggleLightMode(){
+                    if (toggleDark = true){
+                        var element = document.body;
+                        var content = document.getElementById("DarkModetext");
+                        element.className = "dark-mode";
+                        var toggleDark = false; 
+                        break; 
+                    } if (toggledLight = false){
+                        var element = document.body;
+                        var content = document.getElementById("DarkModetext");
+                        var toggledLight = true; 
+                        break; 
+
+                    }
                 }
             </script>
         </ol>
@@ -93,7 +111,25 @@ footer{
 
     </body>
 
-
+    <body>
+        <table>
+            <tr>
+                <th> first line 1 </th>
+                <th> second line 2 </th>
+                <th> third line 3 </th>
+            </tr>
+            <tr>
+                <th> under line 1:1 </th>
+                <th> under line 2:1 </th>
+                <th> line 3:1 </th>
+            </tr>
+            <tr>
+                <th> under line 1:2 </th>
+                <th> line 2:2 </th>
+                <th> line 3:2 </th>
+            </tr>
+        </table>
+    </body>
 
 
 
