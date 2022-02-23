@@ -1,7 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <a href="/css/style.css"></a>
+        <link rel="stylesheet" href="/css/style.css"/>
+        <title>Psykologi eksperimenter ved UiT</title>
+    </head>
+
+<style>
+body{
+    background-color:lightgray;
+    margin: 0em 2em;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+.light-mode {
+    background-color: lightgray;
+    color: black;
+}
+ol {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color: #333; 
+}
+li{
+    float:left;
+    text-align:center;
+    padding: 0.5em 1em;
+    color: white;
+    text-decoration: none; 
+}
+.a{ 
+    float:right;
+    text-align:center;
+    color: white;
+    text-decoration:none;
+}
+a:link{
+    color: white; 
+}
+footer{
+    text-align:center;
+    border: 1em;
+}
+h1{
+    text-align: center;
+
+}
+</style>
+
+<!--- main page -->
+
+    <header>
+        <h1> Psykologi eksperimenter ved UiT</h1>
+        
+    </header>
+
+    <!--- Navigation on the top or to the left? -->
+    <nav>
+        <ol>
+            <li><a href="/index.html"> Hjem</a></li>
+            <li><a href="/no/eksperimenter.html"> Eksperimenter</a></li>
+            <li><a href="/no/arkiv.html"> Arkiv </a></li>
+
+
+            <li class="a">English</li>
+            <li class="a"> <button onclick="toggleLightMode()">Mørk Modus</button></li>
+            
+            <button onclick="darkMode()">Darkmode</button>
+            <button onclick="lightMode()">LightMode</button>
+            <script>
+                function darkMode() {
+                    var element = document.body;
+                    var content = document.getElementById("DarkModetext");
+                    element.className = "dark-mode";
+                    content.innerText = "Dark Mode is ON";
+                }
+                function lightMode() {
+                    var element = document.body;
+                    var content = document.getElementById("DarkModetext");
+                    element.className = "light-mode";;
+                }
+            </script>
+            <script>
+
+                function toggleLightMode(){
+                    if (toggleDark = true){
+                        var element = document.body;
+                        var content = document.getElementById("DarkModetext");
+                        element.className = "dark-mode";
+                        var toggleDark = false; 
+                        break; 
+                    } if (toggledLight = false){
+                        var element = document.body;
+                        var content = document.getElementById("DarkModetext");
+                        var toggledLight = true; 
+                        break; 
+
+                    }
+                }
+            </script>
+        </ol>
+    </nav>
+
+    <body>
+        <h2>Eksperimenter </h2>
+        <p> This is the second page ! </p>
+        <body></body>
+
+    </body>
+
+    <body>
+        <table>
+            <tr>
+                <th> first line 1 </th>
+                <th> second line 2 </th>
+                <th> third line 3 </th>
+            </tr>
+            <tr>
+                <th> under line 1:1 </th>
+                <th> under line 2:1 </th>
+                <th> line 3:1 </th>
+            </tr>
+            <tr>
+                <th> under line 1:2 </th>
+                <th> line 2:2 </th>
+                <th> line 3:2 </th>
+            </tr>
+        </table>
+    </body>
 
 
 
 
-<body>
-    <p> Text test </p>
-</body>
+
+
+
+
+
+    <footer>
+        <hr/>
+        <p>UiT Psychology Projects (UiTPsyPro) | <a href="https://github.com/uitpsypro/0">Source code</a> | Maintained by <a href="https://github.com/a-asen">a-asen</a>    </p>
+    </footer>
+</html>
