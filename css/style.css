@@ -1,3 +1,15 @@
+body{
+    background-color:lightgray;
+    margin: 0em 2em;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+.light-mode {
+    background-color: lightgray;
+    color: black;
+}
 ol {
     list-style-type: none;
     margin:0;
@@ -8,14 +20,39 @@ ol {
 li{
     float:left;
     text-align:center;
-    padding: 0.5em 0.5em;
+    padding: 0.5em 1em;
     color: white;
     text-decoration: none; 
 }
-li a{
-    display:block;
-    color: white;
+.right_align{ 
+    float:right;
     text-align:center;
-    padding: 7em 8em;
+    color: white;
     text-decoration:none;
+}
+a:link{
+    color: white; 
+}
+footer{
+    text-align:center;
+    border: 1em;
+}
+h1{
+    text-align: center;
+}
+tr{
+    padding: 50px;
+    border: 2em; 
+    margin: 5em;
+    
+    border-color: blue ; 
+
+    background-color: lightgreen;
+    color: red; 
+}
+th{
+    max-width: 50;
+}
+img{
+    max-width: 30em; 
 }

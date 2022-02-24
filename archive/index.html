@@ -3,44 +3,54 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <a href="css/style.css"></a>
         <link rel="stylesheet" href="css/style.css"/>
+
         <title>Psykologi eksperimenter ved UiT</title>
     </head>
-    
+
+<style>
+
+</style>
+
 <!--- main page -->
 
     <header>
         <h1> Psykologi eksperimenter ved UiT</h1>
-
         
     </header>
 
     <!--- Navigation on the top or to the left? -->
     <nav>
         <ol>
-            <li><a href="index.html">Hjem</a></li>
-            <li><a href="no/eksperimenter.html">Eksperimenter</a></li>
-            <li><a href="no/arkiv.html">Arkiv </a></li>
+            <li><a href="/index.html"> Hjem</a></li>
+            <li><a href="/no/eksperimenter.html"> Eksperimenter</a></li>
+            <li><a href="/no/arkiv.html"> Arkiv </a></li>
 
-            <li class="right_align">English</li>
-            <li class="rioht_align"><button onclick="toggleLightMode()">Mørk Modus</button></li>
+
+            <li class="a">English </li>
+
+            <li class="a"><button onclick="toggleLightMode()">Mørk Modus</button></li>
             
+
             <button onclick="darkMode()">Darkmode</button>
             <button onclick="lightMode()">LightMode</button>
+
             <script>
-                function darkMode(){
+                function darkMode() {
                     var element = document.body;
                     var content = document.getElementById("DarkModetext");
                     element.className = "dark-mode";
                     content.innerText = "Dark Mode is ON";
                 }
-                function lightMode(){
+                function lightMode() {
                     var element = document.body;
                     var content = document.getElementById("DarkModetext");
                     element.className = "light-mode";;
                 }
             </script>
             <script>
+
                 function toggleLightMode(){
                     if (toggleDark = true){
                         var element = document.body;
@@ -53,6 +63,7 @@
                         var content = document.getElementById("DarkModetext");
                         var toggledLight = true; 
                         break; 
+
                     }
                 }
             </script>
@@ -69,17 +80,12 @@
         </body>
     </body>
 
+    
     <body>
         <table>
             <tr>
-                <th> <h3> Project XXXYYY7888 </h3>
-                    <img src="pictures/0-eng-poster-2.png" alt="tms poster english"> 
-                    extra text to fill the spce, oh oh oh we we we we we we we we 
-                </th>
-                <th><h3> Project XXXX YYYY 888 </h3>
-                    <img src="pictures/1-nor-poster-2.png" alt="tms poster norsk"> 
-                    extra text to fill the spce, oh oh oh we we we we we we we we 
-                </th>
+                <th> first line 1 |  <img src="pictures/0-eng-poster-2.png" alt="tms poster english"> extra text to fill the spce, oh oh oh we we we we we we we we </th>
+                <th> second line 2 | <img src="pictures/1-nor-poster-2.png" alt="tms poster norsk"> extra text to fill the spce, oh oh oh we we we we we we we we </th>
                 <th> third line 3 |  <img src="pictures/head 2.png" alt="head 2"> extra text to fill the spce, oh oh oh we we we we we we we we  </th>
             </tr>
             <tr>
@@ -105,6 +111,6 @@
 
     <footer>
         <hr/>
-        <p>UiT Psychology Projects (UiTPsyPro) | Not officially by UiT | <a href="https://github.com/uitpsypro/0">Source code</a> | Maintained by <a href="https://github.com/a-asen">a-asen</a>    </p>
+        <p>UiT Psychology Projects (UiTPsyPro) | <a href="https://github.com/uitpsypro/0">Source code</a> | Maintained by <a href="https://github.com/a-asen">a-asen</a>    </p>
     </footer>
 </html>
